@@ -24,10 +24,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(target.position);
-        //Debug.Log(offset);
         Vector3 desiredPosition =  target.position + offset;
-        //Debug.Log(desiredPosition);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
 
         transform.position = smoothedPosition;

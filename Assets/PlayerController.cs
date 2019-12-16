@@ -46,6 +46,6 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         
-        rb.velocity = Vector3.zero;
+        
     }
 }
